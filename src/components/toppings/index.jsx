@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
@@ -55,3 +56,14 @@ const Toppings = () => {
 };
 
 export default Toppings;
+=======
+import React from 'react'
+
+const Toppings = () => {
+  return (
+    <div>Toppings</div>
+  )
+}
+
+export default Toppings
+>>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
