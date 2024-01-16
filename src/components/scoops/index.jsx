@@ -10,10 +10,8 @@ const Scoops = () => {
     axios
       .get("http://localhost:3000/scoops")
       .then((res) => {
-<<<<<<< HEAD
-=======
+
         console.log("API Yanıtı:", res.data); // Yanıt verisini logla
->>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
         setData(res.data);
       })
       .catch((error) => {

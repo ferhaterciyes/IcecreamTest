@@ -1,12 +1,8 @@
 body {
   margin: 0;
-<<<<<<< HEAD
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-=======
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
->>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
+
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +11,6 @@ body {
 }
 
 code {
-<<<<<<< HEAD
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
@@ -24,16 +19,7 @@ code {
   white-space: nowrap;
 }
 .terms-box p {
-=======
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.terms-box{
-  position: relative;
-  white-space: nowrap;
-}
-.terms-box p{
->>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
+
   position: absolute;
   background: white;
   padding: 5px 10px;
@@ -41,7 +27,6 @@ code {
   border-radius: 10px 10px 0 10px;
   top: -50px;
   left: -20px;
-<<<<<<< HEAD
 }
 
 .top-card {
@@ -56,6 +41,4 @@ code {
 }
 .top-card input {
   display: none;
-=======
->>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
 }

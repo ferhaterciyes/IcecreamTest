@@ -28,7 +28,6 @@ test("API dan gelen veriler için ekrana kartlar basılır", async () => {
 
 // ekleme ve sıfırlama butonlarının işlşevselliği
 
-<<<<<<< HEAD
 test("ekleme ve sıfırlamanın toplama etkisi", async () => {
   render(<Scoops />);
   const user = userEvent.setup();
@@ -72,53 +71,3 @@ test("ekleme ve sıfırlamanın toplama etkisi", async () => {
   expect(total).toHaveTextContent(0);
 });
 
-=======
-test("ekleme ve sıfırlamanın toplama etkisi", async() => {
-  render(<Scoops />);
-const user = userEvent.setup()
-  // ekleme ve sıfırlama butonunu çağırma
-
- const addBtns = await screen.findAllByRole("button" , {name:"Ekle"})
- const dellBtns = await screen.findAllByRole("button" , {name:"Sıfırla"})
-
-
-  // toplam spanı cağır
-  
- const total = screen.getByRole("heading" , {name:/çeşitler ücreti/i})
-  
-  //toplamın değeri 0 dır
-   expect(total).toHaveTextContent(0)
-  
-  //ekle butonlarından birine tıklanır
-  
-  await user.click(addBtns[0])
-  //toplam fiyetı 20 olur
-  
-  expect(total).toHaveTextContent(20)
-  // farklı birt ceşitten iki tane daha eklenir
-  
-   await user.click(addBtns[2])
-  //toplam fiyat 60 olur
-  expect(total).toHaveTextContent(60)
-  
-  // bir tane eklenenei sıfırla
-  
-  await user.click(dellBtns[0])
-  
-  //toplam fiyat 40 olur
-  
-  expect(total).toHaveTextContent(40)
-  
-  
-  // 2 tane sıfırla butonuna tıklanmır
-  
-  await user.click(dellBtns[2])
-  // toplam fiyat 0 olur
-
-expect(total).toHaveTextContent(0)
-
-
-
-
-});
->>>>>>> e0431bdbf3d3e959742ec83346227a7560c21d3d
