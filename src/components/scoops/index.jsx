@@ -11,7 +11,6 @@ const Scoops = () => {
       .get("http://localhost:3000/scoops")
       .then((res) => {
 
-        console.log("API Yanıtı:", res.data); // Yanıt verisini logla
         setData(res.data);
       })
       .catch((error) => {

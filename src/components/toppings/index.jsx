@@ -5,7 +5,6 @@ const Toppings = () => {
   const [data, setData] = useState([]);
   const [basket, setBasket] = useState([]);
 
-  console.log(data);
   useEffect(() => {
     axios
       .get("http://localhost:3000/toppings")
@@ -38,7 +37,7 @@ const Toppings = () => {
               className="d-flex flex-column align-items-center gap-3"
               htmlFor={item.name}
             >
-              <img height={100} src={item.imagePath} alt="" />
+              <img height={100} src={item.imagePath} alt="sos-resim" />
               <p className="text-center text-nowrap">{item.name}</p>
             </label>
 

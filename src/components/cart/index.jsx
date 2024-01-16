@@ -3,6 +3,10 @@ import React from "react";
 const Cart = ({ item, setBasket, basket }) => {
     // karttaki üründen sepette kaç tane var
 
+
+
+
+
     const found = basket.filter((i)=> i.name === item.name)
 
     const amount = found.length
@@ -23,7 +27,7 @@ const Cart = ({ item, setBasket, basket }) => {
         <button
         onClick={handleReset}
         className="btn btn-sm btn-outline-danger">Sıfırla</button>
-        <span className="fs-2">{amount}</span>
+        <span data-testid = "amount" className="fs-2">{amount}</span>
         <button
           onClick={() => setBasket([...basket, item])}
           className="btn btn-sm btn-outline-success"
